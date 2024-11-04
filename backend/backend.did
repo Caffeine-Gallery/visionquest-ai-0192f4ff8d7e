@@ -1,0 +1,8 @@
+type Result = 
+ variant {
+   err: text;
+   ok: record {processedImageData: vec nat8;};
+ };
+service : {
+  processImage: (vec nat8) -> (Result);
+}
